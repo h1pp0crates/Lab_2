@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            width: 600px;
+            }
+    </style>
+</head>
+<body>
+    <form action="">
+    <table>
+        <tr>
+            <th colspan="2">Pizza Shop 2.0</th>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td><label for="name"></label>
+                <input type="text" id="name" placeholder="Mykyta"><br>
+            </td>
+        </tr>
+        <tr>
+            <td>Pizza topping</td>
+            <td>
+                <input type="radio" id="Topping" name="Pizza Topping" value="Supreme">
+                <label for="Supreme">Supreme</label><br>
+                <input type="radio" id="Topping" name="Pizza Topping" value="Vegetarian">
+                <label for="Vegetarian">Vegetarian</label><br>
+                <input type="radio" id="Topping" name="Pizza Topping" value="Hawaiian">
+                <label for="Hawaiian">Hawaiian</label>
+            </td>
+        </tr>
+        <tr>
+            <td>Pizza Sauce</td>
+            <td>
+            <input list="Sause-list" id="Sause" placeholder="Choose sause" style="background-color: #cecece;">
+            <datalist id="Sause-list">
+                <option value="Tomato">
+                <option value="Cheese">
+            </datalist>
+            </td>
+        </tr>
+        <tr>
+            <td>Optional extras</td>
+            <td>
+            <input type="checkbox" id="Extras" name="Cheese" value="Cheese">
+            <label for="vehicle1">Extra Cheese</label>
+            <input type="checkbox" id="Extras" name="Gluten" value="Gluten">
+            <label for="vehicle2">Gluten Free Base</label><br>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+            <label for="Delivery Instructions">Delivery Instructions:</label><br>
+            <textarea name="message" style="width: 600px; height: 70px;"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><button type="button" style="background-color: #e961be;">Send my Order</button></td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
